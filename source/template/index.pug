@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(href="https://fonts.googleapis.com/css?family=Exo+2:100" rel="stylesheet") 
+        link(rel="stylesheet", href="css/normalise.css")
+        link(rel="stylesheet", href="css/style.css")
+        title Нямушка
+    body.container
+        h1.main-title Ты сегодня покормил кота?
+
+        - for(var i=0; i<3; i++)
+            .card__wrap
+                .card
+                    h2.card__title Сказочное заморское яство
+                    p.card__text Нямушка 
+                        case i
+                            when 0
+                                span с фуа-гра
+                            when 1
+                                span с рыбой
+                            when 2
+                                span с курой
+                    p.card__info
+                        case i
+                            when 0
+                                <b>10</b> порций 
+                                span мышь в подарок
+                            when 1
+                                <b>40</b> порций 
+                                span <b>2</b> мыши в подарок
+                            when 2
+                                <b>100</b> порций 
+                                span <b>5</b> мышей в подарок
+                                span заказчик доволен
+                    .card__weight
+                        case i
+                            when 0
+                                | 2 
+                                span кг
+                            when 1
+                                | 2 
+                                span кг
+                            when 2
+                                | 5 
+                                span кг
+                p.card__underCardText Чего сидишь? порадуй котэ, 
+                    a(href="#") купи.

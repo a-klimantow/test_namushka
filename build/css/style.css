@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Trebuchet';
+  src: url("../../fonts/TrebuchetMS.ttf");
+  font-style: normal; }
+
+html, body {
+  min-height: 100vh; }
+
+.container {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet", sans-serif;
+  color: #fff;
+  background-image: url(../img/941afad4465c7704abe8996ef0f495742e3963a5.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center; }
+
+.main-title {
+  font-family: 'Exo 2', sans-serif;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9fZm9udHMuc2NzcyIsInN0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSx3QkFBd0I7RUFDeEIsdUNBQXVDO0VBQ3ZDLGtCQUFrQixFQUFBOztBQ0V0QjtFQUNJLGlCQUFpQixFQUFBOztBQUVyQjtFQUNJLFNBQVM7RUFDVCxVQUFVO0VBQ1Ysb0NBQW9DO0VBQ3BDLFdBQVc7RUFDWCwwRUFBMEU7RUFDMUUsb0JBQWE7RUFBYixvQkFBYTtFQUFiLGFBQWE7RUFDYixtQkFBZTtNQUFmLGVBQWU7RUFDZiwwQkFBcUI7TUFBckIscUJBQXFCLEVBQUE7O0FBR3pCO0VBQ0ksZ0NBQWdDO0VBQ2hDLDZCQUFnQjtNQUFoQixnQkFBZ0I7RUFDaEIsa0JBQWtCLEVBQUEiLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGZvbnQtZmFjZSB7XG4gICAgZm9udC1mYW1pbHk6ICdUcmVidWNoZXQnO1xuICAgIHNyYzogdXJsKCcuLi8uLi9mb250cy9UcmVidWNoZXRNUy50dGYnKTtcbiAgICBmb250LXN0eWxlOiBub3JtYWw7XG59IiwiQGltcG9ydCAnc3JjL19mb250cyc7XG4kZGVmYXVsdF9jb2xvcjogIzE2OThkOTtcbiRob3Zlcl9jb2xvcjogI2Q5MTY2NztcbiRkaXNhYmxfY29sb3I6ICNiM2IzYjM7XG5cbmh0bWwsIGJvZHkge1xuICAgIG1pbi1oZWlnaHQ6IDEwMHZoO1xufVxuLmNvbnRhaW5lciB7XG4gICAgbWFyZ2luOiAwO1xuICAgIHBhZGRpbmc6IDA7XG4gICAgZm9udC1mYW1pbHk6IFwiVHJlYnVjaGV0XCIsIHNhbnMtc2VyaWY7XG4gICAgY29sb3I6ICNmZmY7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC4uL2ltZy85NDFhZmFkNDQ2NWM3NzA0YWJlODk5NmVmMGY0OTU3NDJlMzk2M2E1LnBuZyk7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LXdyYXA6IHdyYXA7XG4gICAgYWxpZ24tY29udGVudDogY2VudGVyO1xufVxuXG4ubWFpbi10aXRsZSB7XG4gICAgZm9udC1mYW1pbHk6ICdFeG8gMicsIHNhbnMtc2VyaWY7XG4gICAgZmxleC1iYXNpczogMTAwJTtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59Il19 */
