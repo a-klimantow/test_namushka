@@ -172,9 +172,13 @@ html, body {
 
 .disabled-card,
 .disabled-card:hover {
+    * {
+        transition: none;
+    }
     .card,
     &.card__wrap::before {
         border-color: $disabl_color;
+        transition: none;
     }
 
     .card {
