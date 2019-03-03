@@ -1,6 +1,8 @@
 @import 'src/_fonts';
 $default_color: #1698d9;
-$hover_color: #d91667;
+$default_hover_color: #2eade6;
+$active_color: #d91667;
+$active_hover_color: #e62e7a;
 $disabl_color: #b3b3b3;
 
 @mixin fontStyle($size, $weight) {
@@ -52,7 +54,21 @@ html, body {
         transform: rotate(135deg) translate(-2.5%,65%);
         border-top: 4px solid $default_color;
         z-index: 2;
+        transition: all 3s ease-out
+    }
+}
 
+.card__wrap:hover {
+    .card,
+    &.card__wrap::before {
+        border-color: $default_hover_color;
+    }
+    .card__weight {
+        background-color: $default_hover_color;
+    }
+
+    .card__underCardText a{
+        color: $default_hover_color;
     }
 }
 
@@ -69,6 +85,8 @@ html, body {
     border-radius: .8em;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+    transition: border-color 3s ease-out;
 
     span {
         display: block;
@@ -110,6 +128,8 @@ html, body {
         color: #fff;
         font-size: 42px;
         background-color: $default_color;
+        transition: background-color 3s ease-out;
+
         &>span {
             font-size: .5em;
         }
@@ -118,36 +138,49 @@ html, body {
     &__underCardText {
         text-align: center;
         font-size: 13px;
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, .4);
 
         a {
+            font-weight: bold;
             color: $default_color;
             text-decoration-style: dashed;
+            transition: color 3s ease-out;
         }
-    }
-
-    &__link {
-        display: flex;
-        flex-direction: column;
-        color: inherit;
-        text-decoration: none;
     }
 }
 
 .active-card {
     .card, 
     &.card__wrap::before {
-        border-color: $hover_color;
+        border-color: $active_color;
     }
     .card__weight {
-    background-color: $hover_color;
+    background-color: $active_color;
     }
 }
 
-.disabled-card {
+.active-card:hover {
+    .card, 
+    &.card__wrap::before {
+        border-color: $active_hover_color;
+    }
+    .card__weight {
+    background-color: $active_hover_color;
+    } 
+}
+
+
+.disabled-card,
+.disabled-card:hover {
     .card,
     &.card__wrap::before {
         border-color: $disabl_color;
     }
+
+    .card {
+        cursor: auto;
+    }
+
     .card__weight {
         background-color: $disabl_color;
         position: relative;

@@ -21,7 +21,8 @@ $.gulp.task('default', $.gulp.series(
         'sass',
         'pug',
         'img',
-        'fonts'
+        'fonts',
+        'javascript'
     ),
     $.gulp.parallel(
         'watch',

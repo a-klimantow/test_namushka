@@ -14,25 +14,26 @@ html(lang="ru")
         - var additives = ['с фуагра', 'с рыбой', 'с курой'];
         - var nums = ['0,5', '1', '2'];
         - for(var i=0; i<3; i++)
-            .card__wrap(data-name= names[i])
+            .card__wrap(data-name= names[i] class= ((i == 2)? 'disabled-card': ''))
                 .card
-                    a.card__link(href="#")
-                        h2.card__title Нямушка 
-                            span= additives[i]
-                        p.card__info.card__info_top Сказочное заморское яство
-                        p.card__info
-                            case i
-                                when 0
-                                    <b>10</b> порций 
-                                    span мышь в подарок
-                                when 1
-                                    <b>40</b> порций 
-                                    span <b>2</b> мыши в подарок
-                                when 2
-                                    <b>100</b> порций 
-                                    span <b>5</b> мышей в подарок
-                                    span заказчик доволен
+                    h2.card__title Нямушка 
+                        span= additives[i]
+                    p.card__info.card__info_top Сказочное заморское яство
+                    p.card__info
+                        case i
+                            when 0
+                                <b>10</b> порций 
+                                span мышь в подарок
+                            when 1
+                                <b>40</b> порций 
+                                span <b>2</b> мыши в подарок
+                            when 2
+                                <b>100</b> порций 
+                                span <b>5</b> мышей в подарок
+                                span заказчик доволен
                     .card__weight= nums[i]
                         span кг
                 p.card__underCardText Чего сидишь? порадуй котэ, 
                     a(href="#") купи.
+        
+        script(src="js/main.js")
